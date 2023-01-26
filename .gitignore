@@ -1,4 +1,4 @@
-__pycache__/
+/__pycache__/
 /db/__pycache__/
 /routers/__pycache__/
-ig_api.db
+/ig_api.db
