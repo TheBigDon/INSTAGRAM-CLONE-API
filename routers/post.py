@@ -16,5 +16,5 @@ image_url_types = ['absolute', 'relative']
 def create_post(request: PostBase, db: Session = Depends(get_db)):
     if not request.image_url_type in image_url_types:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, 
-        detail="Параметр image_url_type принимает значение либо 'absolyte', либо 'relative'.")
+        detail="Параметр image_url_type принимает значение либо 'absolute', либо 'relative'.")
     return db_post.create_post(db, request)
