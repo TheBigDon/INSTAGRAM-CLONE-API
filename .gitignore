@@ -4,3 +4,4 @@ routers/__pycache__/
 ig_api.db
 environment/
 images/
+auth/
