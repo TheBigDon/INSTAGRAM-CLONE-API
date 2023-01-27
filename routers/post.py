@@ -40,3 +40,7 @@ def upload_image(image: UploadFile = File(...), current_user: UserAuth = Depends
         shutil.copyfileobj(image.file, buffer)
 
     return {'filename': path}
+
+@router.get('/delete/{id}')
+def delete(db: Session = Depends(get_db), current_user: UserAuth = Depends(get_current_user)):
+    return db_post.delete_post(db, id, current_user.id)
