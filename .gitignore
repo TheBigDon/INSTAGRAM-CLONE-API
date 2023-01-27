@@ -3,3 +3,4 @@ db/__pycache__/
 routers/__pycache__/
 ig_api.db
 environment/
+images/
